@@ -4,7 +4,7 @@
       <div v-for="product in products" :key="product.id" class="col-md-3 col-6 mb-3">
         <div class="card h-100 border-0 shadow rounded-md">
           <div class="card-img">
-            <img :src="product.image" class="w-100" style="height: 15em; object-fit: cover; border-top-left-radius: 0.25rem; border-top-right-radius: 0.25rem" />
+            <img :src="'http://localhost:8000' + product.image" class="w-100" style="height: 15em; object-fit: cover; border-top-left-radius: 0.25rem; border-top-right-radius: 0.25rem" />
           </div>
           <div class="card-body">
             <router-link :to="{ name: 'detail_product', params: { slug: product.slug } }" class="card-title font-weight-bold" style="font-size: 20px">

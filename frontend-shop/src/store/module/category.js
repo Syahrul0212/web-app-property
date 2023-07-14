@@ -35,12 +35,14 @@ const category = {
       Api.get("/categories")
         .then((response) => {
           //commit ke mutation GET_CATEGORIES dengan response data
+          console.log(response.data.categories, "hasil");
           commit("GET_CATEGORIES", response.data.categories);
         })
         .catch((error) => {
           //show error log dari response
           console.log(error);
         });
+
     },
 
     //action get data product berdasarkan category

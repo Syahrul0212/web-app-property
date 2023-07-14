@@ -74,7 +74,7 @@
                 <tr v-for="product in productInOrder" :key="product.id" style="background: #edf2f7">
                   <td class="b-none" width="25%">
                     <div class="wrapper-image-cart">
-                      <img :src="product.image" style="width: 100%; border-radius: 0.5rem" />
+                      <img :src="'http://localhost:8000' + product.image" style="width: 100%; border-radius: 0.5rem" />
                     </div>
                   </td>
                   <td class="b-none" width="50%">

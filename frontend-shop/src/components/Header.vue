@@ -21,9 +21,9 @@
           </div>
           <div class="col-md-4 col-5">
             <div class="d-flex justify-content-end">
-              <div class="cart-header">
+              <!-- <div class="cart-header">
                 <a href="#" class="btn search-button btn-md" style="color: #ffffff; background-color: #6677ef; border-color: #ffffff"><i class="fa fa-shopping-cart"></i> {{ cartCount }} | Rp. {{ moneyFormat(cartTotal) }} </a>
-              </div>
+              </div> -->
 
               <div class="account">
                 <router-link :to="{ name: 'login' }" v-if="!isLoggedIn" class="btn search-button btn-md d-none d-md-block ml-4"><i class="fa fa-user-circle"></i> ACCOUNT</router-link>

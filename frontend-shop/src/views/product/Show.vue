@@ -4,7 +4,7 @@
       <div class="col-md-4">
         <div class="card border-0 rounded shadow">
           <div class="card-body p-2">
-            <img :src="product.image" class="w-100 border" />
+            <img :src="'http://localhost:8000' + product.image" class="w-100 border" />
           </div>
         </div>
       </div>
@@ -35,7 +35,9 @@
                 </tr>
               </tbody>
             </table>
-            <button @click.prevent="addToCart(product.id, calculateDiscount(product), product.weight)" class="btn btn-primary btn-lg btn-block"><i class="fa fa-shopping-cart"></i> TAMBAH KE KERANJANG</button>
+            <a href="https://linktr.ee/rahmadproperti">
+              <button class="btn btn-primary btn-lg btn-block">HUBUNGI KAMI</button>
+            </a>
           </div>
         </div>
       </div>

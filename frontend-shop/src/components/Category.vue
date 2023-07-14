@@ -5,7 +5,7 @@
       <hr />
       <ul class="list-group">
         <router-link :to="{ name: 'detail_category', params: { slug: category.slug } }" v-for="category in categories" :key="category.id" class="list-group-item shadow-sm font-weight-bold text-decoration-none text-dark">
-          <img :src="category.image" style="width: 35px" /> {{ category.name }}
+          <img :src="'http://localhost:8000' + category.image" style="width: 35px" /> {{ category.name }}
         </router-link>
         <router-link :to="{ name: 'categories' }" class="list-group-item text-center active shadow-sm font-weight-bold text-decoration-none">LIHAT KATEGORI LAINNYA <i class="fa fa-long-arrow-alt-right"></i></router-link>
       </ul>
@@ -37,7 +37,7 @@ export default {
     // Tambahkan pernyataan console.log() untuk melihat data dan URL gambar
     console.log(categories.value); // Cek data kategori
     categories.value.forEach((category) => {
-      console.log("cek gambar", category.image); // Cek URL gambar kategori
+      console.log("cek gambar1", category.image); // Cek URL gambar kategori
     });
 
     return {
